@@ -5,17 +5,9 @@ import { useState } from "react"
 function Counter() {
     const [count, setCount] = useState(1)
 
-    const increment = () => {
-        setCount(prevCount => prevCount + 1)
-    }
-
-    const decrement = () => {
-        setCount(prevCount => prevCount - 1)
-    }
-
-    const reset = () => {
-        setCount(1)
-    }
+    const increment = () => setCount(prev => prev + 1)
+    const decrement = () => setCount(prev => prev - 1)
+    const reset = () => setCount(1)
 
     return (
         <div className="flex flex-col items-center gap-4 p-6">
