@@ -1,7 +1,9 @@
+import Counter from "./components/Counter";
+
 export default function Home() {
   return (
     <main>
-      <div>Hello world!</div>
+      <Counter />
     </main>
   );
 }
